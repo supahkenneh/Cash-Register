@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cash Register</title>
+</head>
+<body>
+    <h1>Cash Register</h1>
+    <div id="calc-body">
+        <div id="screen"></div>
+        <ul class="row-one">
+            <li class="numbers">7</li>
+            <li class="numbers">8</li>
+            <li class="numbers">9</li>
+            <li class="operator" id='divide'>/</li>
+        </ul>
+        <ul class="row-two">
+            <li class="numbers">4</li>
+            <li class="numbers">5</li>
+            <li class="numbers">6</li>
+            <li class="operator" id='multiply'>x</li>
+        </ul>
+        <ul class="row-three">
+            <li class="numbers">1</li>
+            <li class="numbers">2</li>
+            <li class="numbers">3</li>
+            <li class="operator" id='subtract'>-</li>
+        </ul>
+        <ul class="row-four">
+            <li class="numbers">0</li>
+            <li class="numbers">.</li>
+            <li id='result'>=</li>
+            <li class="operator" id='add'>+</li>
+        </ul>
+        <ul class="register-functions">
+            <li class="functions" id='clear'>Clear</li>
+            <li class="functions" id='deposit'>Deposit</li>
+            <li class="functions" id='withdraw'>Withdraw</li>
+            <li class="functions" id='balance'>Balance</li>
+        </ul>
+    </div>
+<script src="js/calculator.js"></script>
+<script src="js/cash_register.js"></script>
+</body>
+</html>
