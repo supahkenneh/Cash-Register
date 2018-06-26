@@ -2,9 +2,6 @@ var getScreen = document.getElementById('screen');
 var depositAmt;
 var currBal = 0;
 var newBal;
-var toAdd;
-var result;
-var toMin;
  
 
     //balance
