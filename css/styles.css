@@ -69,6 +69,37 @@ body {
     background-image: url('http://www.iwebdesigner.it/wp-content/uploads/2012/08/line_paper013.jpg');
 }
 
+#dance {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: -500px;
+    z-index: 10;
+    animation-duration: 5s;
+    animation-name: yeahYou;
+    animation-iteration-count: 1;
+}
+
+@keyframes yeahYou {
+    from {
+        transform: translate(0,0);
+    }
+
+    to {
+        transform: translate(2500px, 0);
+    }
+}
+
+@keyframes yeahMe {
+    from {
+        transform: translate(2500px, 0);
+    }
+
+    to {
+        transform: translate(0, 0)
+    }
+}
+
 @media only screen and (max-width: 1330px){
     .row-one, .row-two, .row-three, .row-four, #screen, .register-functions, .row-five {
         display: flex;

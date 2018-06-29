@@ -133,14 +133,22 @@
     var randBut = document.getElementById('bored');
     randBut.addEventListener('click', timeForChange);
         function timeForChange(){
-        console.log('test');
         var calcBody = document.getElementById('calc-body');
         var lists = document.getElementsByTagName('li');
         getScreen.style.backgroundColor = change();
         calcBody.style.backgroundColor = change();
-        for(var i = 0; i < lists.length; i++){
-            lists[i].style.backgroundColor = change();
-        }
+            for(var i = 0; i < lists.length; i++){
+             lists[i].style.backgroundColor = change();
+         }
+        var getDance = document.getElementById('dance');
+        getDance.style.display = 'none';
+            if (getDance.style.display === 'none'){
+            getDance.style.display = 'block';
+            }else{
+            getDance.style.display = 'none';
+         }
     }
+
+   
 
 }());
