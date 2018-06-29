@@ -30,7 +30,7 @@ var newBal;
     function withdrawBal(){
         if (currBal >= 0){
             newBal = Number(currBal) - Number(getScreen.innerHTML);
-            // currBal = getScreen.innerHTML;
+
             if (newBal < 0){
                 getScreen.innerHTML = 'Need More Money';
                 getGif.style.display = 'block';
