@@ -95,4 +95,22 @@
         getScreen.innerHTML = null;
     }
 
+    //exponent operation
+    
+    var expBut = document.getElementById('exponent');
+    expBut.addEventListener('click', square);
+    function square(){
+        var result = Number(getScreen.innerHTML) * Number(getScreen.innerHTML);
+        getScreen.innerHTML = result;
+    }
+
+    //squareRoot operation
+
+    var sqrBut = document.getElementById('squareroot');
+    sqrBut.addEventListener('click', squareR);
+    function squareR(){
+        var result = Math.sqrt(Number(getScreen.innerHTML));
+        getScreen.innerHTML = result;
+    }
+
 }());

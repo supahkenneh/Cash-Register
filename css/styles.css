@@ -7,7 +7,7 @@
     border-radius: 25px;
 }
 
-.row-one, .row-two, .row-three, .row-four {
+.row-one, .row-two, .row-three, .row-four, .row-five {
     list-style-type: none;
     display: flex;
     flex-flow: nowrap;
