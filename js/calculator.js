@@ -31,6 +31,7 @@
         toAdd = undefined;
         toMult = undefined;
         toMin = undefined;
+        getGif.style.display = 'none';
         };
 
     //result
@@ -42,19 +43,15 @@
         if (!!toAdd){
             result = Number(toAdd) + Number(num);
             getScreen.innerHTML = result;
-            // console.log(result);
         }else if(!!toMin){
             result = Number(toMin) - Number(num);
             getScreen.innerHTML = result;
-            // console.log(result);
         }else if(!!toMult){
             result = Number(toMult) * Number(num);
             getScreen.innerHTML = result;
-            // console.log(result);
         }else if(!!toDiv){
             result = Number(toDiv) / Number(num);
             getScreen.innerHTML = result;
-            // console.log(result);
         }
     }
 
@@ -140,15 +137,14 @@
             for(var i = 0; i < lists.length; i++){
              lists[i].style.backgroundColor = change();
          }
-        var getDance = document.getElementById('dance');
-        getDance.style.display = 'none';
-            if (getDance.style.display === 'none'){
-            getDance.style.display = 'block';
-            }else{
-            getDance.style.display = 'none';
-         }
-    }
 
-   
+       
+        // getDance.style.display = 'none';
+        //     if (getDance.style.display === 'none'){
+        //     getDance.style.display = 'block';
+        //     }else{
+        //     getDance.style.display = 'none';
+        //  }
+    }
 
 }());

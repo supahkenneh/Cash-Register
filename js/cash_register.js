@@ -24,6 +24,7 @@ var newBal;
 
     //withdraw
 
+    var getGif = document.getElementById('gif');
     var withBut = document.getElementById('withdraw');
     withBut.addEventListener('click', withdrawBal);
     function withdrawBal(){
@@ -32,6 +33,7 @@ var newBal;
             // currBal = getScreen.innerHTML;
             if (newBal < 0){
                 getScreen.innerHTML = 'Need More Money';
+                getGif.style.display = 'block';
             }else{
                 getScreen.innerHTML = newBal;
             }
