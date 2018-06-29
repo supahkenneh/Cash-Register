@@ -32,6 +32,7 @@
         toMult = undefined;
         toMin = undefined;
         getGif.style.display = 'none';
+        getImgDiv.style.display = 'none';
         };
 
     //result
@@ -53,6 +54,9 @@
             result = Number(toDiv) / Number(num);
             getScreen.innerHTML = result;
         }
+        var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+        getImg.src = randGif;
+        getImgDiv.style.display = 'block';
     }
 
     //add operation
@@ -62,6 +66,9 @@
     function addition(){
         toAdd = getScreen.innerHTML;
         getScreen.innerHTML = null;
+        var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+        getImg.src = randGif;
+        getImgDiv.style.display = 'block';
     };
 
 
@@ -72,6 +79,9 @@
     function subtract(){
         toMin = getScreen.innerHTML;
         getScreen.innerHTML = null;
+        var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+        getImg.src = randGif;
+        getImgDiv.style.display = 'block';
     }
 
     //multiply operation
@@ -81,6 +91,9 @@
     function multiply(){
         toMult = getScreen.innerHTML;
         getScreen.innerHTML = null;
+        var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+        getImg.src = randGif;
+        getImgDiv.style.display = 'block';
     }
 
     //divide operation
@@ -90,6 +103,9 @@
     function divide(){
         toDiv = getScreen.innerHTML;
         getScreen.innerHTML = null;
+        var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+        getImg.src = randGif;
+        getImgDiv.style.display = 'block';
     }
 
     //exponent operation
@@ -99,6 +115,9 @@
     function square(){
         var result = Number(getScreen.innerHTML) * Number(getScreen.innerHTML);
         getScreen.innerHTML = result;
+        var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+        getImg.src = randGif;
+        getImgDiv.style.display = 'block';
     }
 
     //squareRoot operation
@@ -108,6 +127,9 @@
     function squareR(){
         var result = Math.sqrt(Number(getScreen.innerHTML));
         getScreen.innerHTML = result;
+        var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+        getImg.src = randGif;
+        getImgDiv.style.display = 'block';
     }
 
     //cube operation
@@ -117,6 +139,9 @@
     function cube(){
         var result = Number(getScreen.innerHTML) * Number(getScreen.innerHTML) * Number(getScreen.innerHTML);
         getScreen.innerHTML = result;
+        var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+        getImg.src = randGif;
+        getImgDiv.style.display = 'block';
     }
 
     function change(){
@@ -127,6 +152,7 @@
         }
         return hex;
     }
+
     var randBut = document.getElementById('bored');
     randBut.addEventListener('click', timeForChange);
         function timeForChange(){
@@ -134,17 +160,30 @@
         var lists = document.getElementsByTagName('li');
         getScreen.style.backgroundColor = change();
         calcBody.style.backgroundColor = change();
+        function showGif(){
+            var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+            getImg.src = randGif;
+            getImgDiv.style.display = 'block';
+        }
             for(var i = 0; i < lists.length; i++){
              lists[i].style.backgroundColor = change();
          }
+    }
 
-       
-        // getDance.style.display = 'none';
-        //     if (getDance.style.display === 'none'){
-        //     getDance.style.display = 'block';
-        //     }else{
-        //     getDance.style.display = 'none';
-        //  }
+    var gifArr = ['https://media.giphy.com/media/msKNSs8rmJ5m/200.webp', 'https://media.giphy.com/media/l0MYw9nh8qcoIyCju/200w.webp', 'https://media.giphy.com/media/Kzvsru1JqQg4E/200w.webp', 'https://media.giphy.com/media/pNpONEEg3pLIQ/200w.webp', 'https://media.giphy.com/media/l4HodBpDmoMA5p9bG/200w.webp', 'https://media.giphy.com/media/l4HodBpDmoMA5p9bG/200w.webp', 'https://media.giphy.com/media/3og0ILzGlzG26yNINq/200.webp', 'https://media.giphy.com/media/1zSiX3p2XEZpe/giphy.webp', 'https://media.giphy.com/media/599XNNWGtWigo/200w.webp', 'https://media.giphy.com/media/5oGIdt1xapQ76/200w.webp', 'https://media3.giphy.com/media/5VKbvrjxpVJCM/200.webp', 'https://media2.giphy.com/media/vQqeT3AYg8S5O/200w.webp', 'https://media2.giphy.com/media/oYtVHSxngR3lC/200.webp', 'https://media3.giphy.com/media/2KhpwqOReXDLq/200w.webp', 'https://media0.giphy.com/media/Nm8ZPAGOwZUQM/200.webp', 'https://media3.giphy.com/media/QjrrSbYaqgi1q/giphy.webp', 'https://media2.giphy.com/media/3o72F8t9TDi2xVnxOE/200w.webp', 'https://media1.giphy.com/media/sR2YaENch4sog/giphy.webp', 'https://media3.giphy.com/media/1Zt3z4uEBPZQY/200.webp', 'https://media3.giphy.com/media/l0HU8MLXSjDXkEUGk/200.webp', 'https://media0.giphy.com/media/26CaLKiimsm3ibpE4/200.webp', 'https://media1.giphy.com/media/mxP1qg93p6vlK/200.webp', 'https://media2.giphy.com/media/YlPeYXasYEPpC/200w.webp', 'https://media1.giphy.com/media/eLFr3gpGFAiWY/200.webp', 'https://media1.giphy.com/media/wAjfQ9MLUfFjq/200.webp', 'https://media3.giphy.com/media/8xhJQUU7aNTRm/200w.webp', 'https://media1.giphy.com/media/YBSVJOp6FqYfVctxjk/200w.webp'];
+
+    
+    var getImg = document.getElementById('random-gif');
+    var getImgDiv = document.getElementById('randomgif');
+
+    for (var i = 0; i < getNumbers.length; i++){
+        getNumbers[i].addEventListener('click', showGif);
+    }
+
+    function showGif(){
+        var randGif = gifArr[Math.floor(Math.random() * gifArr.length)]
+        getImg.src = randGif;
+        getImgDiv.style.display = 'block';
     }
 
 }());
