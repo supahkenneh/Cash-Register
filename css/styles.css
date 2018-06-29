@@ -69,8 +69,8 @@ body {
     background-image: url('http://www.iwebdesigner.it/wp-content/uploads/2012/08/line_paper013.jpg');
 }
 
-@media only screen and (max-width: 1072px){
-    .row-one, .row-two, .row-three, .row-four, #screen, .register-functions {
+@media only screen and (max-width: 1330px){
+    .row-one, .row-two, .row-three, .row-four, #screen, .register-functions, .row-five {
         display: flex;
         flex-flow: wrap;
         margin: 10px;
