@@ -113,4 +113,34 @@
         getScreen.innerHTML = result;
     }
 
+    //cube operation
+    
+    var cubeBut = document.getElementById('cube');
+    cubeBut.addEventListener('click', cube);
+    function cube(){
+        var result = Number(getScreen.innerHTML) * Number(getScreen.innerHTML) * Number(getScreen.innerHTML);
+        getScreen.innerHTML = result;
+    }
+
+    function change(){
+        var letters = '0123456789ABCDEF';
+        var hex = '#';
+        for(var i = 0; i < 6; i++){
+            hex += letters[Math.floor(Math.random()*16)]
+        }
+        return hex;
+    }
+    var randBut = document.getElementById('bored');
+    randBut.addEventListener('click', timeForChange);
+        function timeForChange(){
+        console.log('test');
+        var calcBody = document.getElementById('calc-body');
+        var lists = document.getElementsByTagName('li');
+        getScreen.style.backgroundColor = change();
+        calcBody.style.backgroundColor = change();
+        for(var i = 0; i < lists.length; i++){
+            lists[i].style.backgroundColor = change();
+        }
+    }
+
 }());
